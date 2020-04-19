@@ -6,14 +6,14 @@ $(document).ready(function () {
 		count = 6;
 		result = Math.ceil(Math.random() * count)
 		console.log("You rolled: " + result);
-		$('#result6').html(result)
+		$('#result6').html("You rolled: " + result)
 	});
 	
 	$('#roll20').click(function(){
 		count = 20;
 		result = Math.ceil(Math.random() * count)
 		console.log("You rolled: " + result);
-		$('#result20').html(result)
+		$('#result20').html("You rolled: " + result)
 	});
 
 	
