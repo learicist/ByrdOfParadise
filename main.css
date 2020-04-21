@@ -79,12 +79,24 @@ body {
 .turnCounters {
 	/* background-color: black; */
 	/* color: white; */
+	border-radius: 10px;
+	text-align: center;
 }
 
 .woundThere {
-	border: 2px solid black;
+	border: 1px solid black;
+	border-radius: 10px;
 	display: flex;
 	justify-content: center;
-	font-size: 12px;
+	font-size: 14px;
 	margin-top: 15px;
+	padding: 10px;
+}
+
+.wounds {
+	border-radius: 10px;
+	height: 80%;
+	margin-right: 5px;
+	border: 1px solid black;
+	text-align: center;
 }

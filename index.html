@@ -34,25 +34,25 @@
 			
 			<div id="diceRow" class="row">
 				<div class="col-sm-4 die">
-					<button class="btns" id="roll6">
-						<img style="width: 65%;" src="https://imageog.flaticon.com/icons/png/512/33/33909.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"/>
+					<button style="width: 85%;" class="btns" id="roll6">
+						<img style="width: 100%; border-radius: 10px;" src="https://imageog.flaticon.com/icons/png/512/33/33909.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"/>
 					</button>
 					<p class="hidden results" id="result6"></p>
 				</div>
 				
 				<div class="col-sm-4 die">
-					<button class="btns" id="roll20">
-						<img style="width: 45%; background-color: white;" src="https://cdn2.iconfinder.com/data/icons/roleplay-and-tabletop-dice-glyph/430/9_glyph-512.png"/>
+					<button style="width: 45%;" class="btns" id="roll20">
+						<img style="width: 89%; background-color: white;" src="https://cdn2.iconfinder.com/data/icons/roleplay-and-tabletop-dice-glyph/430/9_glyph-512.png"/>
 					</button>
 					<p class="hidden results" id="result20"></p>
 				</div>
 			</div>
 			
 			<div id="clear" class="row">
-				<div class="col-sm-4 clearBtns">
+				<div class="col-sm-6 clearBtns">
 					<button class="btns" id="clear6">Clear</button>
 				</div>
-				<div class="col-sm-4 clearBtns">
+				<div class="col-sm-6 clearBtns">
 					<button class="btns" id="clear20">Clear</button>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 					<input type="number" class="turnCounters" name="graceTurn" min="1" max="4">
 					<div class="woundThere">
 						<p>Wound: </p>
-						<input type="number" id="quantity" name="quantity" min="1" max="3">
+						<input type="number" class="wounds" id="quantity" name="quantity" min="1" max="3">
 						<p>Stun: </p>
 						<input type="checkbox" id="graceStun">
 					</div>
@@ -73,7 +73,7 @@
 					<input type="number" class="turnCounters" name="aditTurn" min="1" max="4">
 					<div class="woundThere">
 						<p>Wound: </p>
-						<input type="number" name="quantity" min="1" max="3">
+						<input type="number" class="wounds" name="quantity" min="1" max="3">
 						<p>Stun: </p>
 						<input type="checkbox" id="aditStun">
 					</div>
@@ -83,7 +83,7 @@
 					<input type="number" class="turnCounters" name="dyTurn" min="1" max="4">
 					<div class="woundThere">
 						<p>Wound: </p>
-						<input type="number" name="quantity" min="1" max="3">
+						<input type="number" class="wounds" name="quantity" min="1" max="3">
 						<p>Stun: </p>
 						<input type="checkbox" id="dyStun">
 					</div>
@@ -92,8 +92,8 @@
 					<a href="#" id="cap" class="charNames">Captain Byrd</a>
 					<input type="number" class="turnCounters" name="capTurn" min="1" max="4">
 					<div class="woundThere">
-						<p style="border: 1px solid black;">Wound:  </p>
-						<input type="number" id="quantity" name="quantity" min="1" max="3">
+						<p>Wound:  </p>
+						<input type="number" class="wounds" name="quantity" min="1" max="3">
 						<p>Stun: </p>
 						<input type="checkbox" id="capStun">
 					</div>
