@@ -12,6 +12,9 @@
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
 			crossorigin="anonymous">
+		<link 
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap">
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.js"
 			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -29,12 +32,12 @@
 		
 		<div class="container">
 			<div class="row">
-				<h2 id="title">YAR!<h2>
+				<h1 id="title">YAR!<h1>
 			</div>
 			
 			<div id="diceRow" class="row">
 				<div class="col-sm-4 die">
-					<button style="width: 85%;" class="btns" id="roll6">
+					<button style="width: 75%;" class="btns" id="roll6">
 						<img style="width: 100%; border-radius: 10px;" src="https://imageog.flaticon.com/icons/png/512/33/33909.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"/>
 					</button>
 					<p class="hidden results" id="result6"></p>
@@ -57,13 +60,22 @@
 				</div>
 			</div>
 			
+			<!--Grace Starweaver-->
 			<div id="charRow" class="row">
 				<div class="col-sm-3 char">
 					<a href="#" id="grace" class="charNames">Grace Starweaver</a>
 					<input type="number" class="turnCounters" name="graceTurn" min="1" max="4">
+					
+					<!-- INSERT DROP DOWN CARDS HERE -->
+					<div class="hidden cards" id="graceStats">
+						<div class="mods" id="graceMods">
+							<p>Mods:</p>
+						</div>
+					</div>
+					
 					<div class="woundThere">
 						<div class="effects">
-							<p>Wound:</p>
+							<p>Wounds:</p>
 							<input type="number" class="wounds" name="quantity" min="1" max="3">
 						</div>
 						<div class="effects">
@@ -77,12 +89,20 @@
 					</div>
 				</div>
 				
+				<!--Aditsan the Bold-->
 				<div class="col-sm-3 char">
-					<a href="#" id="adit" class="charNames">Aditsan</a>
+					<a href="#" id="adit" class="charNames">Aditsan the Bold</a>
 					<input type="number" class="turnCounters" name="aditTurn" min="1" max="4">
+					
+					<div class="hidden cards" id="aditStats">
+						<div class="mods" id="aditMods">
+							<p>Mods:</p>
+						</div>
+					</div>
+					
 					<div class="woundThere">
 						<div class="effects">
-							<p>Wound:</p>
+							<p>Wounds:</p>
 							<input type="number" class="wounds" name="quantity" min="1" max="3">
 						</div>
 						<div class="effects">
@@ -96,12 +116,21 @@
 					</div>
 				</div>
 				
+				<!-- Dyana Silverheart -->
 				<div class="col-sm-3 char">
 					<a href="#" id="dy" class="charNames">Dyana Silverheart</a>
 					<input type="number" class="turnCounters" name="dyTurn" min="1" max="4">
+					
+					<!-- INSERT DROP DOWN CARDS HERE -->
+					<div class="hidden cards" id="dyStats">
+						<div class="mods" id="dyMods">
+							<p>Mods:</p>
+						</div>
+					</div>
+					
 					<div class="woundThere">
 						<div class="effects">
-							<p>Wound:</p>
+							<p>Wounds:</p>
 							<input type="number" class="wounds" name="quantity" min="1" max="3">
 						</div>
 						<div class="effects">
@@ -115,12 +144,20 @@
 					</div>
 				</div>
 				
+				<!-- Captain Byrd -->
 				<div class="col-sm-3 char">
 					<a href="#" id="cap" class="charNames">Captain Byrd</a>
 					<input type="number" class="turnCounters" name="capTurn" min="1" max="4">
+					
+					<div class="hidden cards" id="capStats">
+						<div class="mods" id="capMods">
+							<p>Mods:</p>
+						</div>
+					</div>
+					
 					<div class="woundThere">
 						<div class="effects">
-							<p>Wound:</p>
+							<p>Wounds:</p>
 							<input type="number" class="wounds" name="quantity" min="1" max="3">
 						</div>
 						<div class="effects">
