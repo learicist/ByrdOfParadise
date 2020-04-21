@@ -9,7 +9,7 @@ $(document).ready(function () {
 		count = 6;
 		result = Math.ceil(Math.random() * count)
 		//console.log("You rolled: " + result);
-		arr6.push(result);
+		arr6.push(' ' + result);
 		$('#result6').html("You have rolled: " + arr6);
 	});
 	
@@ -17,7 +17,7 @@ $(document).ready(function () {
 		count = 20;
 		result = Math.ceil(Math.random() * count)
 		//console.log("You rolled: " + result);
-		arr20.push(result);
+		arr20.push(' ' + result);
 		$('#result20').html("You have rolled: " + arr20);
 	});
 
