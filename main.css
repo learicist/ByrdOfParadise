@@ -66,6 +66,7 @@ body {
 .char {
 	text-align: center;
 	color: black;
+	border: 1px solid black;
 }
 
 input[type="number"] {
@@ -93,6 +94,18 @@ input[type="number"] {
 	border: 1px solid black;
 	text-align: center;
 	height: 27%;
+}
+
+.cards {
+	/* border: 1px solid black; */
+}
+
+.mods {
+	border: 1px dashed black;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding-top: 10px;
+	
 }
 
 .effects {	
