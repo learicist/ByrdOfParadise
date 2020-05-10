@@ -3,7 +3,8 @@ $(document).ready(function () {
 	let count, 
 		result, 
 		arr6 = [], 
-		arr20 = [];
+		arr20 = [],
+		chars = [$('#graceTurn'), $('#aditTurn'), $('#dyTurn'), $('#capTurn')];
 	
 	//die rolls
 	$('#roll6').click(function(){
@@ -15,13 +16,39 @@ $(document).ready(function () {
 		$('#result6').removeClass('hidden');
 	});
 	
-	$('#roll20').click(function(){
-		count = 20;
-		result = Math.ceil(Math.random() * count)
-		//console.log("You rolled: " + result);
-		arr20.push(' ' + result);
-		$('#result20').html("You have rolled: " + arr20);
-		$('#result20').removeClass('hidden');
+	$('#roll20').on('click', function (e){
+		
+		if (e.ctrlKey) {
+			console.log('ctrl key worked');
+			let temp = 0;
+			while (temp < 4) {
+				temp++;
+				count = 20;
+				result = Math.ceil(Math.random() * count);
+				arr20.push(' ' + result);
+			}
+			$('#result20').html("You have rolled: " + arr20);
+			$('#result20').removeClass('hidden');
+			let orderArr = [];
+			for (let i in arr20) {
+				let sort = arr20.sort((a, b) => a - b);
+				console.log(sort);
+				if (arr20[i] == sort[0]) {
+					console.log(arr20.indexOf(i));
+				}
+				//remove item from array after assigned
+			}
+			
+			
+			
+		} else {
+			
+			count = 20;
+			result = Math.ceil(Math.random() * count);
+			arr20.push(' ' + result);
+			$('#result20').html("You have rolled: " + arr20);
+			$('#result20').removeClass('hidden');
+		}
 	});
 	
 	//clear buttons
