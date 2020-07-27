@@ -21,7 +21,7 @@ $(document).ready(function () {
 		if (e.ctrlKey) {
 			console.log('ctrl key worked');
 			let temp = 0;
-			while (temp < 4) {
+			while (temp < 5) {
 				temp++;
 				count = 20;
 				result = Math.ceil(Math.random() * count);
@@ -29,12 +29,17 @@ $(document).ready(function () {
 			}
 			$('#result20').html("You have rolled: " + arr20);
 			$('#result20').removeClass('hidden');
-			let orderArr = [];
+			
+			let sort = arr20.sort((a, b) => b - a);
+			let largest = sort[0];
+			console.log(largest);
+			
+			console.log(arr20.indexOf(largest));
+			
 			for (let i in arr20) {
-				let sort = arr20.sort((a, b) => a - b);
-				console.log(sort);
-				if (arr20[i] == sort[0]) {
-					console.log(arr20.indexOf(i));
+				
+				if (arr20[i] == largest[0]) {
+					
 				}
 				//remove item from array after assigned
 			}
@@ -76,7 +81,10 @@ $(document).ready(function () {
 			$('#dyStats').toggleClass('hidden');
 		} else if (this.id == 'cap') {
 			$('#capStats').toggleClass('hidden');
-		}
+		} else if (this.id == 'pris') {
+			$('#prisStats').toggleClass('hidden');
+		} else if (this.id == 'rusty') {
+			$('#rustyStats').toggleClass('hidden');
 	});
 	
 	
