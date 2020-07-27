@@ -85,6 +85,7 @@ $(document).ready(function () {
 			$('#prisStats').toggleClass('hidden');
 		} else if (this.id == 'rusty') {
 			$('#rustyStats').toggleClass('hidden');
+		}
 	});
 	
 	
